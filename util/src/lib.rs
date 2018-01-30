@@ -38,6 +38,7 @@ extern crate target_info;
 
 #[macro_use]
 extern crate log as rlog;
+extern crate panic_hook;
 extern crate uuid;
 
 pub mod avl;
@@ -82,6 +83,7 @@ pub use kvdb::*;
 pub use memorydb::MemoryDB;
 pub use misc::*;
 pub use overlaydb::*;
+pub use panic_hook::set_panic_handler;
 pub use parking_lot::{Condvar, Mutex, MutexGuard, RwLock, RwLockReadGuard, RwLockWriteGuard};
 pub use semantic_version::*;
 pub use trie::{SecTrieDB, SecTrieDBMut, Trie, TrieDB, TrieDBMut, TrieError, TrieFactory, TrieMut};
