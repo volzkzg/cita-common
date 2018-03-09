@@ -52,5 +52,5 @@ pub use self::consensus::{Proposal, SignedProposal, Vote};
 pub use self::executor::{ReceiptError, ConsensusConfig, ExecutedHeader, ExecutedInfo, ExecutedResult, LogEntry, Receipt, ReceiptErrorWithOption, ReceiptWithOption, StateRoot};
 pub use self::request::{BlockTag, Request_oneof_req, BatchRequest, Call, Request};
 pub use self::response::{Response_oneof_data, FullTransaction, Response};
-pub use self::snapshot::{Cmd, Resp, SnapshotReq, SnapshotResp};
+pub use self::snapshot::{Cmd, Resp, Manifest, SnapshotReq, SnapshotResp};
 pub use self::sync::{SyncRequest, SyncResponse};
